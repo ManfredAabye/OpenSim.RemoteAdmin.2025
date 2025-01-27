@@ -1,32 +1,95 @@
 # OpenSim.RemoteAdmin.2025
 
-## Overview
-OpenSim RemoteAdmin 2025 is a PHP-based remote administration tool for OpenSimulator.
+## OpenSimulator Console Command Interface
 
-## Requirements
-- PHP <>= 8.3 or higher
-- OpenSimulator 0.9.3.x or higher
-- A web server (e.g., Apache, Nginx)
-- Internet access for remote administration
+Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console-Befehle an einen OpenSimulator-Server zu senden. Es wurde speziell entwickelt, um die Verwaltung und Steuerung eines OpenSimulator-Servers zu erleichtern.
 
-## Installation
-1. Clone the repository:
+---
+
+## 📋 Features
+
+- **Senden von Remote-Befehlen:** 
+  Führen Sie OpenSimulator-Serverbefehle über die RemoteAdmin-API aus.
+- **Benutzerfreundliches Formular:**
+  Einfaches Eingabefeld für die IP, Port, Passwort, Befehl und Parameter.
+- **Statusanzeige:**
+  Erfolgs- und Fehlermeldungen basierend auf der Serverantwort.
+- **Automatischer Redirect:** 
+  Rückkehr zur Hauptseite nach erfolgreicher Ausführung eines Befehls.
+
+---
+
+## 🛠️ Voraussetzungen
+
+- **PHP 8.0 oder höher**
+- Webserver wie Apache oder Nginx
+- RemoteAdmin in der `OpenSim.ini`-Konfigurationsdatei aktiviert:
+  ```ini
+   [RemoteAdmin]
+   enabled = true
+   access_password = secret
+   enabled_methods = all
+  ```
+---
+
+## 🚀 Installation
+
+1. **Clone das Repository:**
    ```bash
    git clone https://github.com/ManfredAabye/OpenSim.RemoteAdmin.2025.git
+   cd opensimulator-console-interface
+   ```
+2. **Stelle sicher, dass dein OpenSimulator-Server läuft.**
+
+---
+
+## 🖥️ Nutzung
+
+1. Öffne die Weboberfläche im Browser:
+   ```bash
+   http://localhost/ConsoleCommand.php
    ```
 
-## How to Setup the Remote Admin interface
+2. Fülle das Formular aus:
+   - **OpenSim IP:** IP-Adresse des OpenSimulator-Servers.
+   - **OpenSim Port:** Port des RemoteAdmin-Dienstes (Standard: `9000`).
+   - **OpenSim Passwort:** Das Passwort für den RemoteAdmin-Zugang.
+   - **OpenSim Command:** Der auszuführende Konsolenbefehl (z. B. `alert`).
+   - **OpenSim Parameters:** Optionale Parameter für den Befehl.
 
-First you should enable the remote admin interface to do so just add the following lines to your OpenSim.ini file Port should be set to a nonzero value to have the remote admin on a different port
+3. Klicke auf **"Send OpenSim Command"**, um den Befehl auszuführen.
 
-As of r/16843 you can limit access to remote admin to specific IP addresses by using the optional access_ip_addresses. You can list all IP's allowed to access remote admin by seperating each IP by a comma. If access_ip_addresses isn't set, then all IP addresses can access RemoteAdmin.
+4. Bei Erfolg erscheint die Meldung:
+   ```
+   Command executed successfully.
+   ```
+   Die Seite kehrt nach 5 Sekunden zur Hauptoberfläche zurück.
 
-```bash
-[RemoteAdmin]
-enabled = true
-access_password = secret
-enabled_methods = all
+---
+
+## ⚠️ Hinweise
+
+- **Fehlerbehebung:**
+  - Stelle sicher, dass die IP des Servers und der Port des OpenSimulators korrekt sind.
+  - Überprüfe, ob der RemoteAdmin-Dienst im OpenSimulator korrekt konfiguriert ist.
+- **Sicherheitsaspekt:**
+  - Halte das Passwort für den RemoteAdmin-Zugang geheim und beschränke den Zugriff auf das Webinterface.
+
+---
+
+## 🧩 Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz**. Weitere Informationen findest du in der Datei [LICENSE](LICENSE).
+
+---
+
+## 📞 Support
+
+Bei Fragen oder Problemen kannst du ein Issue auf GitHub erstellen oder dich an die OpenSimulator-Community wenden:
+
+- [OpenSimulator-Wiki](http://opensimulator.org/wiki)
+
+---
+
+Viel Spaß beim Verwalten deines OpenSimulator-Servers! 🚀
 ```
-
-See OpenSim.ini.example in the OpenSimulator distribution for more details. 
-
