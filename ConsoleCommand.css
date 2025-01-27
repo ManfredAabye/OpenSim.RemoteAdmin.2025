@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.input-group {
+    margin: 15px 0;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+.btn.reset {
+    background-color: #f44336;
+}
+.btn.reset:hover {
+    background-color: #da190b;
+}
