@@ -16,6 +16,10 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
   Erfolgs- und Fehlermeldungen basierend auf der Serverantwort.
 - **Automatischer Redirect:** 
   Rückkehr zur Hauptseite nach erfolgreicher Ausführung eines Befehls.
+- **Sicherheit:**
+  In der Version 1.2 wurde stark an der Sicherheit gearbeitet.
+- **Zukünftig:**
+  Wenn in der Zukunft admin_console_command eine Response rückmeldung erhält wird penSim.RemoteAdmin.2025 bereit sein diese anzuzeigen.
 
 ---
 
@@ -30,6 +34,7 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
    access_password = secret
    enabled_methods = all
   ```
+  (Bitte ändern sie das Passwort "secret" und benutzen sie ein starkes mindestens 12 stelliges Passwort mit Groß und kleinschreibung sowie Sonderzeichen.)
 ---
 
 ## 🚀 Installation
@@ -37,9 +42,10 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
 1. **Clone das Repository:**
    ```bash
    git clone https://github.com/ManfredAabye/OpenSim.RemoteAdmin.2025.git
-   cd opensimulator-console-interface
+   cd OpenSim.RemoteAdmin.2025
    ```
-2. **Stelle sicher, dass dein OpenSimulator-Server läuft.**
+      
+3. **Stelle sicher, dass dein OpenSimulator-Server läuft.**
 
 ---
 
