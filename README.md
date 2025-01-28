@@ -85,7 +85,7 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
 
 ## 🧩 Lizenz
 
-Dieses Projekt steht unter der **MIT-Lizenz**. Weitere Informationen findest du in der Datei [LICENSE](LICENSE).
+Dieses Projekt steht unter der **MIT-Lizenz**. Weitere Informationen findest du in der Datei [LICENSE](MIT) license:MIT.
 
 ---
 
