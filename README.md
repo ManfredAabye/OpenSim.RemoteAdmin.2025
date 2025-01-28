@@ -2,7 +2,7 @@
 
 ## OpenSimulator Console Command Interface
 
-Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console-Befehle an einen OpenSimulator-Server zu senden. Es wurde speziell entwickelt, um die Verwaltung und Steuerung eines OpenSimulator-Servers zu erleichtern.
+Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um mit admin_console_command eine vielzahl von Befehle an einen OpenSimulator Server zu senden. Es wurde speziell entwickelt, um die Verwaltung und Steuerung eines OpenSimulator-Servers zu erleichtern.
 
 ---
 
