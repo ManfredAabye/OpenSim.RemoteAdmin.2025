@@ -19,7 +19,7 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
 - **Sicherheit:**
   In der Version 1.2 wurde stark an der Sicherheit gearbeitet.
 - **Zukünftig:**
-  Wenn in der Zukunft admin_console_command eine Response rückmeldung erhält wird penSim.RemoteAdmin.2025 bereit sein diese anzuzeigen.
+  Wenn in der Zukunft admin_console_command eine Response rückmeldung erhält wird OpenSim.RemoteAdmin.2025 bereit sein diese anzuzeigen.
 
 ---
 
