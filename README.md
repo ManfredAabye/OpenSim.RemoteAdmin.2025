@@ -57,11 +57,11 @@ Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um Remote-Console
    ```
 
 2. Fülle das Formular aus:
-   - **OpenSim IP:** IP-Adresse des OpenSimulator-Servers.
+   - **OpenSim IP:** IP-Adresse des OpenSimulator-Servers (z. B. `192.168.2.1`).
    - **OpenSim Port:** Port des RemoteAdmin-Dienstes (Standard: `9000`).
-   - **OpenSim Passwort:** Das Passwort für den RemoteAdmin-Zugang.
+   - **OpenSim Passwort:** Das Passwort für den RemoteAdmin-Zugang (z. B. `qR>H-&u9A2kVs@Yt`). 
    - **OpenSim Command:** Der auszuführende Konsolenbefehl (z. B. `alert`).
-   - **OpenSim Parameters:** Optionale Parameter für den Befehl.
+   - **OpenSim Parameters:** Optionale Parameter für den Befehl (z. B. `"Hello World"`).
 
 3. Klicke auf **"Send OpenSim Command"**, um den Befehl auszuführen.
 
