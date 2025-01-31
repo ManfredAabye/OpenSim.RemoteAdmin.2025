@@ -2,6 +2,109 @@
 
 ## OpenSimulator Console Command Interface
 
+This project offers a user-friendly web interface to send various commands to an OpenSimulator server using `admin_console_command`. It is specifically designed to facilitate the management and control of an OpenSimulator server.
+
+---
+
+## 📋 Features
+
+- **Sending Remote Commands:**
+  Execute OpenSimulator server commands via the RemoteAdmin API.
+- **User-Friendly Form:**
+  Simple input fields for IP, port, password, command, and parameters.
+- **Status Display:**
+  Success and error messages based on server response.
+- **Automatic Redirect:**
+  Return to the main page after successful command execution.
+- **Security:**
+  Significant security improvements in version 1.2.
+- **Future:**
+  When `admin_console_command` receives response feedback in the future, OpenSim.RemoteAdmin.2025 will be ready to display it.
+
+---
+
+## 🛠️ Requirements
+
+- **PHP 8.0 or higher**
+- Web server like Apache or Nginx
+- RemoteAdmin enabled in the `OpenSim.ini` configuration file:
+  ```ini
+   [RemoteAdmin]
+   enabled = true
+   access_password = secret
+   enabled_methods = all
+  ```
+  (Please change the password "secret" and use a strong password of at least 12 characters with uppercase, lowercase, and special characters.)
+---
+
+## 🚀 Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ManfredAabye/OpenSim.RemoteAdmin.2025.git
+   cd OpenSim.RemoteAdmin.2025
+   ```
+      
+3. **Ensure your OpenSimulator server is running.**
+
+---
+
+## 🖥️ Usage
+
+1. Open the web interface in your browser:
+   ```bash
+   http://localhost/ConsoleCommand.php
+   ```
+
+2. Fill out the form:
+   - **OpenSim IP:** IP address of the OpenSimulator server (e.g., `192.168.2.1`).
+   - **OpenSim Port:** Port of the RemoteAdmin service (e.g., `9000`).
+   - **OpenSim Password:** The password for RemoteAdmin access (e.g., `qR>H-&u9A2kVs@Yt`). 
+   - **OpenSim Command:** The console command to execute (e.g., `alert`).
+   - **OpenSim Parameters:** Optional parameters for the command (e.g., `"Hello World"`).
+
+3. Click **"Send OpenSim Command"** to execute the command.
+
+4. On success, the message will appear:
+   ```
+   Command executed successfully.
+   ```
+   The page will return to the main interface after 5 seconds.
+
+---
+
+## ⚠️ Notes
+
+- **Troubleshooting:**
+  - Ensure the server's IP address and the OpenSimulator port are correct.
+  - Verify that the RemoteAdmin service is correctly configured in OpenSimulator.
+- **Security Aspect:**
+  - Keep the password for RemoteAdmin access secret and restrict access to the web interface.
+
+---
+
+## 🧩 License
+
+This project is under the **MIT License**. For more information, see the [LICENSE](LICENSE) file.
+
+---
+
+## 📞 Support
+
+For questions or issues, you can create an issue on GitHub or reach out to the OpenSimulator community:
+
+- [OpenSimulator Wiki](http://opensimulator.org/wiki)
+
+---
+
+Have fun managing your OpenSimulator server! 🚀
+
+---
+
+# OpenSim.RemoteAdmin.2025
+
+## OpenSimulator Console Command Interface
+
 Dieses Projekt bietet eine benutzerfreundliche Weboberfläche, um mit admin_console_command eine vielzahl von Befehle an einen OpenSimulator Server zu senden. Es wurde speziell entwickelt, um die Verwaltung und Steuerung eines OpenSimulator-Servers zu erleichtern.
 
 ---
