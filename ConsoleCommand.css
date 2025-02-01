@@ -39,3 +39,9 @@ body {
 .btn.reset:hover {
     background-color: #da190b;
 }
+.btn.logout {
+    background-color: #ca8d24;
+}
+.btn.logout:hover {
+    background-color: #e2ae54;
+}
