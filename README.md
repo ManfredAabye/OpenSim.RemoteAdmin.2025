@@ -1,3 +1,4 @@
+<img src="https://github.com/ManfredAabye/OpenSim.RemoteAdmin.2025/blob/main/flags/En.png?raw=true" alt="Project Badge"> <img src="https://github.com/ManfredAabye/OpenSim.RemoteAdmin.2025/blob/main/flags/De.png?raw=true" alt="Project Badge">
 # OpenSim.RemoteAdmin.2025
 
 ## OpenSimulator Console Command Interface
